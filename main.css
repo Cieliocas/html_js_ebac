@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100&family=Roboto&display=swap');
+
+* {
+    margin: 20;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+form {
+    margin: 0 auto;
+}
