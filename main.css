@@ -2,18 +2,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,100&family=Roboto&display=swap');
 
 * {
-    margin: 20;
-    padding: 10;
+    margin-top: 4px;
+    padding: 300;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    margin: 20px auto;
-    max-width: 300px;
+    margin: 2px auto;
+    padding: 60px;
+    max-width: 400px;
     width: 100%;
+    border: outset #0000000e;
+    border-radius: 10px;
+    background-color: #ececec1c;
+    box-shadow: 0 0 10px #36363698;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 form {
-    margin: 0 auto;
+    margin-top: 40px;
+}
+
+input, textarea, button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+}
+
+button {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+    box-shadow: 0 0 10px #36363698;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-position: right center;
+}
+
+button:click {
+    background-position: left;
+}
+
+.message-error {
+    background-image: linear-gradient(to right, #b10000 0%, red 50%, #b10000 100%);
+    color: #fff;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 12px;
+    display: none;
+    border-radius: 8px;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
 }
